@@ -1,6 +1,6 @@
 import "@google/model-viewer"
 
-const parthUrl = new URL("../../assets/sae402.glb", import.meta.url).href
+const parthUrl = new URL("../../assets/sae402vgood.glb", import.meta.url).href
 
 
 export function ParthenonModel() {
