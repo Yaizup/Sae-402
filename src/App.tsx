@@ -1,7 +1,7 @@
 import { useState } from "react"
 import { Map } from "@/components/Map"
 import { ModelViewerContainer } from "@/components/ModelViewerContainer"
-import { Article } from "@/components/Article"
+import { Archive } from "@/components/Archive"
 import { AppSidebar } from "@/components/AppSidebar"
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "@/components/ui/sidebar"
 import { Separator } from "@/components/ui/separator"
@@ -73,7 +73,7 @@ function App() {
         <main className="relative flex-1 overflow-hidden">
           <div className="absolute inset-0 pointer-events-none border-t border-primary/5 shadow-[inset_0_20px_50px_rgba(184,134,11,0.05)] z-10" />
           {vueAct === "3d" && <ModelViewerContainer />}
-          {vueAct === "article" && <Article />}
+          {vueAct === "article" && <Archive />}
           {vueAct === "carte" && <Map coordCible={COORD_PARTH} trigVol={trigVol} />}
         </main>
       </SidebarInset>
